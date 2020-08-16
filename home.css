@@ -126,9 +126,9 @@ h1 {
     transform: translateY(-50%);
 }
 
-.empty:hover {
+/*.empty:hover {
 	text-decoration: line-through;
-}
+}*/
 
 #plus:before {
     content: '';
@@ -176,6 +176,11 @@ h1 {
 .list li #plus{
    list-style-type: none; 
 }*/
+.highlight, .highlight_stay{
+    color:red;
+}
+
+
 
 
 
