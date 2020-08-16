@@ -1,28 +1,104 @@
 <!DOCTYPE html>
     <head>
         <style>
-            button {
+            @font-face {
+                font-family: FOT-Seurat-Pro-B;
+                src: url('FOT-Seurat-Pro-B.otf');
+            }
+
+            button #changeColor {
                 outline: none;
-                width: 25px;
-                height: 25px;
+                width: 50px;
+                height: 50px;
             }
 
             body {
                 height: 600px;
                 width: 350px;
+                background-image: url("./images/greenleaves.png");
             }
+
 
             .hidden {
                 display: none;
             }
+            
+            button#goalButton {
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 24px;
+                color: white;
+                font-family: FOT-Seurat-Pro-B;
+            }
+
+            ul#todoList {
+                font-size: 24px;
+                font-family: FOT-Seurat-Pro-B;
+                color: white;
+            }
+
+            li input {
+                padding: 0;
+                border: none;
+                font-size: 24px;
+                color: white;
+                font-family: FOT-Seurat-Pro-B;
+                background-color: transparent;
+            }
+
+            p {
+                font-size: 24px;
+                align-self: center;
+                justify-self: center;
+                text-align: center;
+                color: white;
+                font-family: FOT-Seurat-Pro-B;
+            }
+
+            .navContainer {
+                position: absolute;
+                width: 309px;
+                height: 96px;
+                left: 25px;
+                top: 480px;
+                background-image: url("./images/navImage.png");
+            }
+
+            nav button {
+                padding: 0;
+                background-color: transparent;
+                border: none;
+            }
+
+            button#nav1 {
+                left: 10px;
+                position: absolute;
+                bottom: 0px;
+            }
+            button#nav2 {
+                text-align: center;
+                left: 115px;
+                position: absolute;
+                bottom: 17px;
+            }
+
+            button#nav3 {
+                right: 10px;
+
+                position: absolute;
+                bottom: 5px;
+            }
+
         </style>
     </head>
     <body>
         <div id="content1">
-            <p>Message of the Day</p>
-            <ul>
+            <p>To Do List</p>
+            <ul id = "todoList">
                 <li>Say hi to isabelle</li>
                 <li>give her dat glizzy</li>
+                <li><button id = "goalButton">add new goal</button></li>
             </ul>
         </div>
 
@@ -43,11 +119,13 @@
           <p id="demo"></p>
         </div>
 
-        <nav>
-          <button id="nav1">test1</button>
-          <button id="nav2">test2</button>
-          <button id="nav3">test3</button>
-        </nav>
+        <section class = "navContainer">
+            <nav>
+                <button id="nav1"><img src="images/list.png" ></button>
+                <button id="nav2"><img src="images/timer.png" ></img></button>
+                <button id="nav3"><img src="images/shop.png"></button>
+              </nav>
+        </section>
 
         <script src="popup.js"></script>
 
