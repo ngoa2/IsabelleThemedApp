@@ -31,11 +31,12 @@ chrome.storage.sync.get('color', function(data) {
         clearTimeout(timerId);
         // When the Timer is done play the jingle
         audio.play();
-        startButton.innerHTML = "Stop Music"
+        startButton.innerHTML = "Stop Music";
 
         startButton.onclick = function() {
           audio.pause();
           audio.currentTime = 0;
+          startButton.innerHTML = "Start";
         }
 
       } else {
