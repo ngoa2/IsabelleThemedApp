@@ -40,3 +40,25 @@ function getMins(mins) {
 	}
 	return mins;
 }
+
+var li = document.createElement("li");
+li.onclick = function() {
+    li.classList.add('empty');
+}
+
+// document.getElementsByClassName('empty').addEventListener("click", function(){
+//     // document.getElementsByClassName("empty").classList.remove('empty');
+//     document.getElementsByClassName("empty").classList.add('full');
+// })
+
+
+
+
+
+
+
+
+
+
+
+
