@@ -11,6 +11,10 @@
                 height: 600px;
                 width: 350px;
             }
+
+            .hidden {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -22,12 +26,12 @@
             </ul>
         </div>
 
-        <div id="content2">
+        <div id="content2" class="hidden">
             <button id="changeColor"></button>
         </div>
 
         <!-- Prompt User for Timer -->
-        <div id="content3">
+        <div id="content3" class="hidden">
           <p>Enter how long:</p>
 
           <input type="text" id="time" name="time"><br><br>
@@ -44,7 +48,7 @@
           <button id="nav2">test2</button>
           <button id="nav3">test3</button>
         </nav>
-        
+
         <script src="popup.js"></script>
 
     </body>
