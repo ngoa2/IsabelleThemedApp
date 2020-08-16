@@ -1,0 +1,102 @@
+body{
+	width: 100%;
+	background-color: #F4EADC;
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: finkHeavy;
+	src: url('FinkHeavy.otf');
+}
+
+h1 {
+	font-family: finkHeavy;
+	font-size: 100px;
+	font-weight: normal;
+}
+
+.row {
+	display: inline-block;
+}
+
+#isabelle {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 9;
+	margin-left: 5%;
+	width: 50%;
+	font-family: finkHeavy;
+}
+
+#desk {
+	height: 900px;
+}
+
+#right {
+	position: absolute;
+	right: 0;
+	margin-right: 5%;
+}
+
+.rect {
+	width: 500px;
+  	height: 500px;
+	background:#C4C4C4;
+	border-radius: 25px;
+}
+
+#time {
+	color: white;
+	position: absolute;
+	top: 51%;
+  	left:105px;
+	margin-right: 3%;
+	z-index: 9;
+	font-size: 40px;
+}
+
+#time:hover {
+	border: 1px solid yellow;
+}
+
+#todo {
+	color: black;
+	position: absolute;
+	top: 60%;
+  	left:275px;
+	margin-right: 3%;
+	z-index: 9;
+}
+
+#todo:hover {
+	border: 1px solid yellow;
+}
+
+#calendar {
+	color: black;
+	position: absolute;
+	top: 55%;
+  	left:470px;
+	margin-right: 3%;
+	z-index: 9;
+}
+
+#calendar #month {
+	font-size: 20px;
+	transform: rotate(-9.5deg);
+	/*move -9.5 degrees*/
+}
+
+#calendar #day {
+	font-size: 40px;
+	transform: rotate(-9.5deg);
+	/*move 9.5 degrees*/
+}
+
+#calendar:hover {
+	border: 1px solid yellow;
+}
+
+
+
