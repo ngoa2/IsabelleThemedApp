@@ -11,18 +11,27 @@
                 height: 600px;
                 width: 350px;
             }
+
+            .hidden {
+                display: none;
+            }
         </style>
     </head>
     <body>
-        <p>Message of the Day</p>
-        <ul>
-            <li>Say hi to isabelle</li>
-            <li>give her dat glizzy</li>
-        </ul>
-        <button id="changeColor"></button>
+        <div id="content1">
+            <p>Message of the Day</p>
+            <ul>
+                <li>Say hi to isabelle</li>
+                <li>give her dat glizzy</li>
+            </ul>
+        </div>
 
+        <div id="content2" class="hidden">
+            <button id="changeColor"></button>
+        </div>
 
         <!-- Prompt User for Timer -->
+        <div id="content3" class="hidden">
           <p>Enter how long:</p>
 
           <input type="text" id="time" name="time"><br><br>
@@ -32,6 +41,13 @@
           <button id="start">Start</button>
 
           <p id="demo"></p>
+        </div>
+
+        <nav>
+          <button id="nav1">test1</button>
+          <button id="nav2">test2</button>
+          <button id="nav3">test3</button>
+        </nav>
 
         <script src="popup.js"></script>
 
