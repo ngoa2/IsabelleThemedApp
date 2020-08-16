@@ -14,7 +14,7 @@ chrome.storage.sync.get('color', function(data) {
     });
   };
 
-  //COUNTDOWN TIMER
+  //COUNTDOWN
 
   var audio = new Audio('alarmJingle.mp3');
   let startButton = document.getElementById('start');
@@ -31,14 +31,6 @@ chrome.storage.sync.get('color', function(data) {
         clearTimeout(timerId);
         // When the Timer is done play the jingle
         audio.play();
-        startButton.innerHTML = "Stop Music";
-
-        startButton.onclick = function() {
-          audio.pause();
-          audio.currentTime = 0;
-          startButton.innerHTML = "Start";
-        }
-
       } else {
         // Relabel HTML
         elem.innerHTML = timeLeft + ' seconds remaining';
