@@ -9,6 +9,11 @@ body{
 	src: url('FinkHeavy.otf');
 }
 
+@font-face {
+	font-family: seurat;
+	src: url('FOT-Seurat-Pro-B.otf');
+}
+
 h1 {
 	font-family: finkHeavy;
 	font-size: 100px;
@@ -35,8 +40,9 @@ h1 {
 
 #right {
 	position: absolute;
-	right: 0;
+	right:0;
 	margin-right: 5%;
+	font-family: seurat;
 }
 
 .rect {
@@ -98,18 +104,19 @@ h1 {
 	border: 1px solid yellow;
 }
 
-.list {
+.list{
     list-style: none;
     text-align: left;
 }
-.list li {
+.list li{
     position: relative;
-    padding-left: 20px;
+    padding-left: 50px;
+    font-size: 30px;
 }
-.list li:before {
+.normalList:before {
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     background-image: url('images/Rectangle.png');
     background-size: cover;
@@ -119,9 +126,28 @@ h1 {
     transform: translateY(-50%);
 }
 
-#plus {
-	list-style-type: none;
+#plus:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('images/add.png');
+    background-size: cover;
+    background-repeat: none;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+/*#plus{
+	height: 30px;
+	width: 30px;
+	list-style: none;
+}
+
+.list li #plus{
+   list-style-type: none; 
+}*/
 
 
 
