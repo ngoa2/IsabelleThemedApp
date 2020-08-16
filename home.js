@@ -5,6 +5,7 @@ function getTime() {
     day = currentTime.getDate();
     year = currentTime.getFullYear();
     hour = normalHour(currentTime.getHours());
+    mins = getMins(currentTime.getMinutes());
     time = hour + ":" + currentTime.getMinutes();
 
     if(currentTime.getHours() > 12) {
@@ -27,6 +28,15 @@ setInterval(function(){getTime();}, 1000);//setInterval(clockTick, 1000); will a
 function normalHour(hour) {
 	if (hour > 12) {
 		return 24 - hour;
+	} else if (hour === 0) {
+		return 12;
 	}
 	return hour;
+}
+
+function getMins(mins) {
+	if (mins < 10) {
+		return "0" + mins;
+	}
+	return mins;
 }
