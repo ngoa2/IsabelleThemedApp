@@ -61,7 +61,6 @@ chrome.storage.sync.get('color', function(data) {
       navBarChange("content1", "content2", "content3");
     }
     
-
     testButton2.onclick = function(){
       navBarChange("content2", "content1", "content3");
     }
@@ -69,5 +68,32 @@ chrome.storage.sync.get('color', function(data) {
     testButton3.onclick = function(){
       navBarChange("content3", "content2", "content1");
     }
+
+
+    // append to list
+    let goalButton = document.getElementById("goalButton");
+    let ul = document.getElementById("todoList");
+    let children = ul.children;
+
+    let lastNode = children[children.length - 2];
+
+    goalButton.onclick = function(){
+      //create li
+      let li = document.createElement("li");
+
+      //create input box and set to text type
+      let inputBox = document.createElement("INPUT");
+      inputBox.setAttribute("type", "text");
+
+      // set new li to have input box as content
+      li.appendChild(inputBox);
+
+      li.onclick = function() {
+        li.style.textDecoration = "line-through";
+      }
+      
+      lastNode.appendChild(li);
+    }
+
 
     
